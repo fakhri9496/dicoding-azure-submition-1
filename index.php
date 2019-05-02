@@ -21,7 +21,7 @@
     </form>
     <?php
       try {
-          $conn = new PDO("sqlsrv:server = tcp:beecone.database.windows.net,1433; Database = beecode", "beecode", "dicoding1234!!");
+          $conn = new PDO("sqlsrv:server = tcp:beecode.database.windows.net,1433; Database = beecode", "beecode", "dicoding1234!!");
           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } catch (Exception $e) {
           echo "Failed: " . $e;
